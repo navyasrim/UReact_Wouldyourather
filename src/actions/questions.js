@@ -57,7 +57,7 @@ export function handleAddNewQuestion(questionOne, questionTwo) {
             optionTwoText: questionTwo,
             author: authedUser,
         })
-            .then((question) => dispatch(addNewQuestion(question)))
+            .then((question) => dispatch(addNewQuestion(question)))            
             .then(() => dispatch(hideLoading()))
     }
 }

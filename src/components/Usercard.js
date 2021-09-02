@@ -12,7 +12,7 @@ class Usercard extends Component {
         const image = user.avatarURL;
         return (
             <Fragment>
-            <div id='user-card'>
+                <div id='user-card' >
                 <img
                     src={images[image]}
                     alt={`avatar of ${user.name}`}

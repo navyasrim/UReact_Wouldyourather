@@ -3,8 +3,7 @@ import { NavLink } from 'react-router-dom'
 import { connect } from 'react-redux'
 import { logOutUser } from '../actions/authedUser'
 import images from './images/images.js'
-import createHistory from 'history/createBrowserHistory'
-
+import { createBrowserHistory as createHistory } from 'history'
 
 class Nav extends Component {
     state = {

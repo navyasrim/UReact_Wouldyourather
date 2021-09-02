@@ -63,7 +63,6 @@ class Addnewquestion extends Component {
                         <h1 style={{ fontWeight: 'bold' }}>  Create New Question </h1>
                         </div>
                      
-                     
                     <div className='displayGrid-itemsheader' >
 
                         Complete the Question:

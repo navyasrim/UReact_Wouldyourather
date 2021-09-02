@@ -15,10 +15,11 @@ import '../index.css';
 
 
 class App extends Component {
-    //when component mounts we want to dispatch invocation of handleInitialData action creator
+   // when component mounts we want to dispatch invocation of handleInitialData action creator
     componentDidMount() {
-        this.props.dispatch(handleInitialData())
-    }
+    this.props.handleInitialData()
+}
+   
     render() {
         const loggedOut = (this.props.authedUser === '') || !this.props.authedUser
         console.log(this.props.user)
@@ -55,4 +56,4 @@ function mapStateToProps({ authedUser }) {
        }
 }
 //we need to connect our App component  to get invocation 
-export default connect(mapStateToProps) (App)
+export default connect(mapStateToProps, { handleInitialData }) (App)

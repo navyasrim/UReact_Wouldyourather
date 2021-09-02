@@ -47,8 +47,7 @@ class Login extends Component {
                         <h3> Sign In </h3>
                         <select 
                             value={this.state.value}
-                            onChange={this.handleChange}                            
-                            defaultValue=''
+                            onChange={this.handleChange}
                             style={{ width: '95%', height : '30px' }}>
                             <option value={''}>Select</option>
                             {Object.values(users).map((user) =>
