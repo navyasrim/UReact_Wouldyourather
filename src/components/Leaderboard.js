@@ -6,8 +6,9 @@ class Leaderboard extends Component {
     render() {
         const { userIDs, getScore } = this.props;
         return (
-            <div id='leaderboard'>
-                {userIDs.map((userID) => (<Usercard userID={userID} getScore={getScore} />))}
+            <div id='leaderboard' >
+                {userIDs.map((userID) =>
+                    (<Usercard key={userID } userID={userID} getScore={getScore} />))}
                </div>
 
         )

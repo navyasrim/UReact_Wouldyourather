@@ -61,7 +61,7 @@ class Questionsunanswered extends Component {
                                 onChange={this.onSelect}
                                 checked={this.state.selection === 'optionOne'}
                             />
-                            <label for="optionOne">{optionOne}</label>
+                            <label htmlFor="optionOne">{optionOne}</label>
                         </div>
 
                         <div>
@@ -73,7 +73,7 @@ class Questionsunanswered extends Component {
                                 onChange={this.onSelect}
                                 checked={this.state.selection === 'optionTwo'}
                             />
-                            <label for="optionTwo">{optionTwo}</label>
+                            <label htmlFor="optionTwo">{optionTwo}</label>
                         </div>
                         <button
                             className='btn'

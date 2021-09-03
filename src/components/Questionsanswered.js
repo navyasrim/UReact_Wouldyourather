@@ -62,12 +62,12 @@ class Questionsanswered extends Component {
                                 'azure'
                         }}>
                         {'Would you rather ' + optionOneText + '?'}
-                        <div class='percentage-bar'
+                        <div className='percentage-bar'
                             style={{
                                 width: '100%',
                                 backgroundColor: 'grey',
                             }}>
-                            <div class='percentage-filler'
+                            <div className='percentage-filler'
                                 style={{
                                     height: '30px',
                                     backgroundColor: 'green',
@@ -76,7 +76,7 @@ class Questionsanswered extends Component {
                                 }} >
                                 {optionOnePercent}
                             </div>
-                            <div class='percentage-label'
+                            <div className='percentage-label'
                                 style={{ textAlign: 'center', }}>
                                 {`${optionOneVotes} out of ${optionOneVotes + optionTwoVotes} votes`}
                             </div>
@@ -91,12 +91,12 @@ class Questionsanswered extends Component {
                                 'azure'
                         }}>
                         {'Would you rather ' + optionTwoText + '?'}
-                        <div class='percentage-bar'
+                        <div className='percentage-bar'
                             style={{
                                 width: '100%',
                                 backgroundColor: 'grey',
                             }}>
-                            <div class='percentage-filler'
+                            <div className='percentage-filler'
                                 style={{
                                     height: '30px',
                                     backgroundColor: 'green',
@@ -105,7 +105,7 @@ class Questionsanswered extends Component {
                                 }} >
                                 {optionTwoPercent}
                             </div>
-                            <div class='percentage-label'
+                            <div className='percentage-label'
                                 style={{ textAlign: 'center', }}>
                                 {`${optionTwoVotes} out of ${optionOneVotes + optionTwoVotes} votes`}
                             </div>
