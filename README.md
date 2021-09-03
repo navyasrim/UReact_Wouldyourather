@@ -1,70 +1,45 @@
-# Getting Started with Create React App
+ **Would You Rather** : This is a simple polling game that presents the user with a series of questions. All data is stored internally in a data JS file. The user can log in as one of the available users and answer would you rather questions!
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with Create React App, developed using React, Redux, React Router, & Redux Thunk.
 
-## Available Scripts
+**INSTALLATION**
 
-In the project directory, you can run:
+clone this repo into a new folder on your computer.
 
-### `npm start`
+On the command line in the same directory, run npm install or yarn add to add dependencies.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+run npm start or yarn start to begin the server. Enjoy this project on your local host!
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+**LAYOUT**
 
-### `npm test`
+**LOGIN PAGE**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Select the User name from the drop down and click on SignIn to login to the project.
 
-### `npm run build`
+After Login it will redirect to homepage, if none of the users is selected SignIn button will be disabled.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+**HOME PAGE**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The home page renders a list of available questions. The left tab returns your unanswered questions, and the right tab renders your already answered question.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+**QUESTION PAGE**
 
-### `npm run eject`
+Click on the question to visit that page. Vote here!
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Once a question is answered you can view the poll results.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+When you answer a question your score will go up by one.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+**NEW QUESITON PAGE**
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+The new question page allows you to add new questions!
 
-## Learn More
+Input the choices in the OptionOne and OptionTwo inputs, and press submit ,if saved it will be rerouted to the home page.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+If both the inputs are empty the submit button will be disable, and it will be enabled only when any one of the inputs or both are entered.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+When you ask a new question your score will go up by one.
 
-### Code Splitting
+**LEADERBOARD**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+In Leaderboard you can find the score and ranking of each user. A score is the combination of questions asked and questions created.
